@@ -8,7 +8,6 @@ const redirects = [
 ]
 
 export default function ({store, route, redirect}) {
-  console.log(route)
   const path = route.path
   const r = redirects.find(r => r.from === path)
   if (r) {
